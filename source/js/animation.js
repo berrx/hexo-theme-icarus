@@ -14,7 +14,7 @@
         '.column-right > .card'
     ].forEach(selector => {
         $(selector).forEach(element => {
-            element.style.transition = '0s';
+            //element.style.transition = '0s';
             element.style.opacity = '0';
             element.style.transform = 'scale(0.8)';
             element.style.transformOrigin = 'center top';
@@ -36,7 +36,7 @@
                 setTimeout(() => {
                     element.style.opacity = '1';
                     element.style.transform = '';
-                    element.style.transition = 'opacity 0.3s ease-out, transform 0.3s ease-out';
+                    //element.style.transition = 'opacity 0.3s ease-out, transform 0.3s ease-out';
                 }, i * 100);
                 i++;
             });
